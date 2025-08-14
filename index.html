@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Research Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>AI Research Assistant</h1>
+        <p>Ask a question and the AI team will find the answer for you.</p>
+        <textarea id="question-input" placeholder="e.g., Who won the 2024 F1 World Championship?"></textarea>
+        <button id="ask-button">Ask the Team</button>
+        <div id="loader" class="loader" style="display: none;"></div>
+        <div id="output-container">
+            <h2>Answer:</h2>
+            <div id="answer-output">
+                <p>The answer will appear here...</p>
+            </div>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
